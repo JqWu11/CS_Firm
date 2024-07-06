@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    background-color: #000000;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     font-family: 'Lora', serif;
@@ -16,8 +16,8 @@ ul {
 
 /* Header Styles */
 .header {
-    background-color: #1C1C1C;
-    color: #FFD700;
+    background-color: #00041c;
+    color: #cf8d46;
     font-size: 26px;
     display: flex;
     justify-content: space-between;
@@ -31,14 +31,16 @@ ul {
 }
 
 .header-links a {
-    color: #FFD700;
+    color: #cf8d46;
     text-decoration: none;
     font-size: 18px;
 }
 
+
+
 /* Button Styles */
 .button-top {
-    background-color: #FFD700;
+    background-color: #cf8d46;
     border-radius: 5px;
     font-size: 16px;
     color: #121212;
@@ -49,12 +51,34 @@ ul {
 }
 
 .button-top:hover {
-    background-color: #FFA500;
+    background-color: #cf8d46;
 }
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+    overflow: hidden;
+    background-color: #fff; /* White background color */
+}
+
+.hero img {
+    max-width: 80%; /* Adjusts the width of the image */
+    max-height: 80%; /* Adjusts the height of the image */
+    margin: auto; /* Centers the image within the container */
+    display: block;
+    object-fit: contain; /* Ensures the image fits within the container while maintaining aspect ratio */
+    border: 10px solid #ffffff; /* Optional: Adds a white border for better separation */
+}
+
 
 /* Typography */
 h1 {
-    color: #FFD700;
+    color: #00041c;
     font-size: 52px;
     font-weight: 900;
     margin: 20px 0;
@@ -67,83 +91,26 @@ h1 {
     text-align: center;
     margin-bottom: 40px;
 }
-
-/* Section One */
-.section-one {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    justify-content: center;
-    padding: 40px 20px;
-    background-color: #1C1C1C;
+.col_right{
+	float:left;
+	width:755px;
+	min-height:500px;
+	padding:40px 0 0 10px;
+	border-left: 1px solid #9d9677 ;
 }
 
-.section-one .card {
-    background-color: #FFD700;
-    border-radius: 8px;
-    padding: 20px;
-    width: 300px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.copy{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#333333;
 }
-
-.section-one .card img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-.section-one .card h2 {
-    font-size: 24px;
-    color: #121212;
-    margin-bottom: 10px;
-}
-
-.section-one .card p {
-    color: #121212;
-    font-size: 16px;
-}
-
-/* Section Two */
-.section-two {
-    background-color: #2F2F2F;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.section-two .info {
-    font-size: 36px;
-    color: #FFD700;
-    margin-bottom: 40px;
-}
-
-.section-two .info-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    justify-content: center;
-}
-
-.section-two .info-card {
-    background-color: #1C1C1C;
-    border-radius: 8px;
-    padding: 20px;
-    width: 200px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.section-two .info-card img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
 
 /* Footer Styles */
-footer {
-    color: #FFD700;
+body footer {
+    width: 100%;
+    background: #00041c;
     text-align: center;
-    margin: 30px 0;
-    font-size: 15px;
-    padding: 20px;
-    background-color: #121212;
+    font-size: 12px;
+    padding: 40px 0;
+    color: #676b83;
 }
