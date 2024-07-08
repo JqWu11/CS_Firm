@@ -31,8 +31,12 @@ ul {
     transition: top 0.3s; /* Smooth transition */
 }
 
-.header .logo {
-    text-align: left; /* Align the logo text to the left */
+.header .logo a {
+    color: inherit; /* Inherit color from parent */
+    text-decoration: none; /* Remove underline */
+    font-size: inherit; /* Inherit font size from parent */
+    font-family: inherit; /* Inherit font family from parent */
+    font-weight: inherit; /* Inherit font weight from parent */
 }
 
 .header-links {
@@ -45,6 +49,21 @@ ul {
     color: #cf8d46;
     text-decoration: none;
     font-size: 18px;
+}
+
+/* General Container Styles */
+.container {
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add padding to the left and right */
+    max-width: 1200px; /* Optional: set a max-width to constrain the width */
+}
+
+/* Ensure all images inside the container adhere to the container's padding */
+.container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 /* Button Styles */
@@ -96,7 +115,7 @@ footer {
     color: #676b83;
 }
 
-/* Carasoul section css */
+/* Carousel Section CSS */
 
 .carousel-inner .carousel-caption {
     padding-bottom: 170px;
@@ -108,25 +127,66 @@ footer {
 }
 
 .carousel-inner .carousel-caption h3 {
-font-family: 'Coiny', cursive;
+    font-family: 'Coiny', cursive;
 }
 
-.carousel-inner .carousel-caption button { 
-font-weight: 500; 
-font-size: 16px; 
-letter-spacing: 1px;
-display: inline-block; 
-padding: 10px 30px; 
-border-radius: 58px;
-transition: 0.55; 
-border: 2px solid #3489db;
-text-decoration: none;
-background:#3489db;
-color: #fff;
+.carousel-inner .carousel-caption button {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 58px;
+    transition: 0.55;
+    border: 2px solid #3489db;
+    text-decoration: none;
+    background: #3489db;
+    color: #fff;
 }
 
 .carousel-item img {
     width: 100%;
     height: 100vh; /* Full viewport height */
     object-fit: cover; /* Ensure the images cover the entire container */
+}
+
+/* Dropdown Styling */
+
+ul {
+    list-style: none;
+    background: #00041c;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown {
+    width: 100%;
+    background: #00041c;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover {
+    background: #00041c;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
 }
