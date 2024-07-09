@@ -122,12 +122,12 @@ footer {
 }
 
 .carousel-inner .carousel-caption h1 {
-    font-family: 'Coiny', cursive;
-    font-size: 56px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
 }
 
 .carousel-inner .carousel-caption h3 {
-    font-family: 'Coiny', cursive;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .carousel-inner .carousel-caption button {
