@@ -56,6 +56,7 @@ ul {
     margin: 0 auto; /* Center the container */
     padding: 0 20px; /* Add padding to the left and right */
     max-width: 1200px; /* Optional: set a max-width to constrain the width */
+    padding-top: 100px; /* Add padding to compensate for fixed header */
 }
 
 /* Ensure all images inside the container adhere to the container's padding */
@@ -116,7 +117,6 @@ footer {
 }
 
 /* Carousel Section CSS */
-
 .carousel-inner .carousel-caption {
     padding-bottom: 170px;
 }
@@ -151,7 +151,6 @@ footer {
 }
 
 /* Dropdown Styling */
-
 ul {
     list-style: none;
     background: #00041c;
@@ -190,3 +189,90 @@ ul li a:hover {
 ul li:hover ul.dropdown {
     display: block;
 }
+
+/* Contact Page Styles */
+.contact-left {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-left-title h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.contact-left-title hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #ff994f;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-inputs {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+    background-color: #f8f9fa;
+    font-size: 16px;
+}
+
+.contact-inputs:focus {
+    border: 2px solid #ff994f;
+}
+
+.contact-inputs::placeholder {
+    color: #a9a9a9;
+}
+
+textarea.contact-inputs {
+    height: 400px; /* Adjusted height for textarea */
+    resize: none; /* Disable resize */
+}
+
+.contact-left button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #ffffff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #ff994f, #fa6d86);
+    cursor: pointer;
+}
+
+.contact-left button img {
+    width: 20px;
+    height: 20px;
+}
+
+.contact-right {
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-right h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-right p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.contact-right p strong {
+    color: #00041c;
+}
+

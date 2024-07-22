@@ -1,54 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Carrier, Shende & Associates, P.C.</title>
-    <link rel="stylesheet" href="../style.css">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="../style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header class="header">
-        <div class="logo">Carrier, Shende & Associates, P.C.</div>
+        <div class="logo">
+            <a href="../index.html">Carrier Shende</a>
+        </div>
         <nav class="header-links">
-            <a href="../index.html">Home</a>
-            <a href="about_us.html">About Us</a>
-            <a href="services.html">Services</a>
-            <a href="our_team.html">Our Team</a>
-            <a href="contact.html">Contact</a>
+            <ul>
+                <li>
+                    <a>Practices ▾</a>
+                    <ul class="dropdown">
+                        <li><a href="practices/patents.html">Patents</a></li>
+                        <li><a href="practices/trademarks.html">Trademarks</a></li>
+                        <li><a href="practices/copyrights.html">Copyrights</a></li>
+                        <li><a href="practices/trade_secrets.html">Trade Secrets</a></li>
+                        <li><a href="practices/design_patents.html">Design Patents</a></li>
+                        <li><a href="practices/litigations.html">Litigations</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="experience.html">Experiences</a>
+                </li>
+                <li>
+                    <a> Professionals ▾</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Germany</a></li>
+                        <li><a href="#">Australia</a></li>
+                        <li><a href="#">Switzerland</a></li>
+                        <li><a href="#">Japan</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Careers ▾</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Germany</a></li>
+                        <li><a href="#">Australia</a></li>
+                        <li><a href="#">Switzerland</a></li>
+                        <li><a href="#">Japan</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>News ▾</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Germany</a></li>
+                        <li><a href="#">Australia</a></li>
+                        <li><a href="#">Switzerland</a></li>
+                        <li><a href="#">Japan</a></li>
+                    </ul>
+                </li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
+
     <main>
-        <section class="hero">
-            <h1>Contact Us</h1>
-            <p class="subtext">Get in touch with us for any inquiries or legal assistance.</p>
-        </section>
-        <section class="contact-us">
-            <div class="container">
-                <h2>Contact Information</h2>
-                <p>You can reach us through the following contact details:</p>
-                <ul>
-                    <li><strong>Phone:</strong> (123) 456-7890</li>
-                    <li><strong>Email:</strong> info@lawfirmname.com</li>
-                    <li><strong>Address:</strong> 1234 Law Street, Legal City, LA 56789</li>
-                </ul>
-                <h2>Contact Form</h2>
-                <form action="#" method="post">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                    
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                    
-                    <button type="submit" class="button-top">Submit</button>
-                </form>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="contact-left">
+                        <div class="contact-left-title">
+                            <h2>Get in touch</h2>
+                            <hr>
+                        </div>
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="11af6f8f-d3a9-4f1f-8e1e-e30404be697d">                            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                            <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                            <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                            <button type="submit">Submit<img src="../images/arrow_icon.png" alt=""></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6 contact-right">
+                    <h2>Contact Information</h2>
+                    <p><strong>Address:</strong> 24101 Novi Rd #100, Novi, MI 48375</p>
+                    <p><strong>Phone:</strong> (248) 344-4422</p>
+                    <p><strong>Email:</strong> info@carriershende.com</p>
+                </div>
             </div>
-        </section>
+        </div>
     </main>
+
     <footer>
+        <p>Contact # <strong>(248) 344-4422</strong></p>
+        <p>Address: <strong>24101 Novi Rd #100, Novi, MI 48375</strong></p>
         &copy; 2024 Carrier, Shende & Associates, P.C. All rights reserved.
     </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
