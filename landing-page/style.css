@@ -44,16 +44,18 @@ ul {
 .header-links{
     display: flex;
     background-color: #f147e9;
-    gap: 20px;
-    margin: auto; /* Push the links to the right */
+    gap: 500px;
+    padding: 10px 90px; /* Push the links to the right */
     align-items: center;
     align-self: center;
 }
 
 .header-links a {
     color: #cf8d46;
+    background-color: #f8f9fa;
     text-decoration: none;
     font-size: 18px;
+    border-radius: 12px;
 }
 
 /* General Container Styles */
@@ -119,6 +121,7 @@ footer {
     text-align: center;
     font-size: 18px;
     padding: 40px 0;
+    margin-top: auto;
     color: #676b83;
 }
 
@@ -294,9 +297,14 @@ textarea.contact-inputs {
 
 .logo{
     display: flex;
-    
+    align-items: flex-start;
 }
 
 .header-smaller{
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.header-left{
+    font-size: 40px;
 }
