@@ -6,7 +6,15 @@ body {
     font-family: 'Lora', serif;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    flex: 1;
 }
+
+main{
+    flex: 1;
+    padding-top: auto;
+}
+
 
 ul {
     list-style-type: none;
@@ -16,7 +24,7 @@ ul {
 
 /* Header Styles */
 .header {
-    background-color: #279dd3;
+    background-color: #3252a8;
     color: #cf8d46;
     font-size: 26px;
     display: flex;
@@ -24,7 +32,7 @@ ul {
     justify-content: space-between; /* Space between logo and links */
     align-items: center; /* Vertically center the items */
     padding-top: 30px;
-    margin-bottom: 0px;
+    margin-bottom: 200px;
     position: fixed; /* Fixed position */
     width: 100%; /* Full width */
     top: 0; /* Align to top */
@@ -43,11 +51,8 @@ ul {
 
 .header-links{
     display: flex;
-    background-color: #f147e9;
-    gap: 500px;
-    padding: 10px 90px; /* Push the links to the right */
-    align-items: center;
-    align-self: center;
+    background-color: #161464;
+    padding: 5px 140px; 
 }
 
 .header-links a {
@@ -58,12 +63,16 @@ ul {
     border-radius: 12px;
 }
 
+.header-links ul{
+    background-color: inherit;
+}
+
 /* General Container Styles */
 .container {
     margin: 0 auto; /* Center the container */
-    padding: 0 20px; /* Add padding to the left and right */
-    max-width: 1200px; /* Optional: set a max-width to constrain the width */
-    padding-top: 20px; /* Add padding to compensate for fixed header */
+    padding: 0 0px; /* Add padding to the left and right */
+    max-width: 1200px; /* Essentially creates side margins */
+    padding-top: 0px; /* Add padding to compensate for fixed header */
 }
 
 /* Ensure all images inside the container adhere to the container's padding */
@@ -72,6 +81,7 @@ ul {
     height: auto;
     display: block;
     margin: 0 auto;
+    padding-top: 150px;
 }
 
 /* Button Styles */
@@ -84,6 +94,7 @@ ul {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    
 }
 
 .button-top:hover {
@@ -119,8 +130,10 @@ footer {
     width: 100%;
     background: #00041c;
     text-align: center;
+    width: 100%;
     font-size: 18px;
     padding: 40px 0;
+    margin-bottom: -10px;
     margin-top: auto;
     color: #676b83;
 }
@@ -147,9 +160,9 @@ footer {
     padding: 10px 30px;
     border-radius: 58px;
     transition: 0.55;
-    border: 2px solid #3489db;
+    border: 2px solid #303ead;
     text-decoration: none;
-    background: #3489db;
+    background: #303ead;
     color: #fff;
 }
 
@@ -292,12 +305,16 @@ textarea.contact-inputs {
 .header-right{
     display:flex;
     flex-direction: column;
-    background-color: #279dd3;
+    background-color: inherit;
 }
 
 .logo{
     display: flex;
     align-items: flex-start;
+}
+
+.logo img{
+    margin: 0 300px;
 }
 
 .header-smaller{
