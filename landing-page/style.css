@@ -310,11 +310,12 @@ textarea.contact-inputs {
 
 .logo{
     display: flex;
-    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
 }
 
 .logo img{
-    margin: 0 300px;
+    margin: 0px;
 }
 
 .header-smaller{
