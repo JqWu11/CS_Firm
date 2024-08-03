@@ -295,20 +295,24 @@ textarea.contact-inputs {
 
 .contact-left button {
     display: flex;
-    align-items: center;
-    padding: 15px 30px;
-    font-size: 16px;
+    align-items: center; /* Center text and icon vertically */
+    justify-content: center; /* Center text and icon horizontally */
+    padding: 15px 30px; /* Adjust padding to control button size */
+    font-size: 16px; /* Adjust font size */
     color: #ffffff;
-    gap: 10px;
+    gap: 10px; /* Space between text and icon */
     border: none;
-    border-radius: 50px;
+    border-radius: 50px; /* Rounded corners */
     background: linear-gradient(270deg, #ff994f, #fa6d86);
     cursor: pointer;
+    text-align: center; /* Center text inside the button */
+    line-height: normal; /* Ensure line-height does not affect vertical alignment */
 }
 
 .contact-left button img {
-    width: 20px;
-    height: 20px;
+    width: 20px; /* Icon size */
+    height: 20px; /* Icon size */
+    margin-left: 10px; /* Space between text and icon */
 }
 
 .contact-right {
