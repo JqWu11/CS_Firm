@@ -3,7 +3,7 @@ body {
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
-    font-family: 'Lora', serif;
+    font-family: serif;
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -54,7 +54,7 @@ ul {
     background-color: #161464;
     padding: 5px 0; 
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .header-links ul{
@@ -209,7 +209,6 @@ footer {
 /* Dropdown Styling */
 ul {
     list-style: none;
-    background: #00041c;
 }
 
 ul li {
@@ -232,7 +231,7 @@ ul li ul.dropdown li {
 
 ul li ul.dropdown {
     width: 100%;
-    background: #00041c;
+    background: rgba(0, 0, 0, 0.01);
     position: absolute;
     z-index: 999;
     display: none;
@@ -338,22 +337,25 @@ textarea.contact-inputs {
 
 .logo-subtext{
     font-size: 18px;
+    text-align: center;
 }
 
 .header-right{
     display:flex;
     flex-direction: column;
     background-color: inherit;
+    line-height: 20px;
 }
 
 .logo{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%;
 }
 
 .logo img{
     margin: 0px;
+    margin-top: -10px;
 }
 
 .header-smaller{
@@ -363,4 +365,5 @@ textarea.contact-inputs {
 
 .header-left{
     font-size: 40px;
+    line-height: 28px;
 }
