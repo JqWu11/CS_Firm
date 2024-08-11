@@ -3,7 +3,7 @@ body {
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
-    font-family: serif;
+    font-family: 'Lucida Sans';
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -24,8 +24,8 @@ ul {
 
 /* Header Styles */
 .header {
-    background-color: #3252a8;
-    color: #cf8d46;
+    background-color: #1f2432;
+    color: #d73526;
     font-size: 26px;
     display: flex;
     flex-direction: column;
@@ -65,7 +65,7 @@ ul {
 }
 
 .header-links a {
-    color: #cf8d46;
+    color: #d73526;
     background-color: #f8f9fa;
     text-decoration: none;
     font-size: 18px;
@@ -139,7 +139,7 @@ footer {
     text-align: center;
     width: 100%;
     font-size: 18px;
-    padding: 40px 0;
+    padding: 20px 0;
     margin-bottom: -10px;
     margin-top: auto;
     color: #676b83;
@@ -218,7 +218,7 @@ ul li {
 
 ul li a {
     display: block;
-    padding: 15px 25px;
+    padding: 5px 30px;
     color: #FFF;
     text-decoration: none;
     text-align: center;
@@ -227,6 +227,7 @@ ul li a {
 
 ul li ul.dropdown li {
     display: block;
+    padding: 0;
 }
 
 ul li ul.dropdown {
