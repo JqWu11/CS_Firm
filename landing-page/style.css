@@ -24,8 +24,8 @@ ul {
 
 /* Header Styles */
 .header {
-    background-color: #1f2432;
-    color: #d73526;
+    background-color: #a9a9a9;;
+    color: #1e1e1f;
     font-size: 26px;
     display: flex;
     flex-direction: column;
@@ -51,7 +51,7 @@ ul {
 
 .header-links{
     display: flex;
-    background-color: #161464;
+    background-color: #9e9e9e;
     padding: 5px 0; 
     width: 100%;
     justify-content: space-evenly;
@@ -65,7 +65,7 @@ ul {
 }
 
 .header-links a {
-    color: #d73526;
+    color: inherit;
     background-color: #f8f9fa;
     text-decoration: none;
     font-size: 18px;
@@ -192,7 +192,7 @@ footer {
 .carousel-control-prev {
     left: 250px; /* Adjust as needed */
 }
-
+    
 .carousel-control-next {
     right: 250px; /* Adjust as needed */
 }
@@ -204,6 +204,14 @@ footer {
     background-size: 100%, 100%;
     border-radius: 100%; /* Make them circular for better appearance */
     background-color: rgba(0, 0, 0, 0.7); /* Add a background color for better visibility */
+}
+
+.carousel-indicators li{
+    width: 8px;
+    height: 8px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    margin: 0 10px;
 }
 
 /* Dropdown Styling */
@@ -239,7 +247,7 @@ ul li ul.dropdown {
 }
 
 ul li a:hover {
-    background: #00041c;
+    background: #9fa2b3;
 }
 
 ul li:hover ul.dropdown {
