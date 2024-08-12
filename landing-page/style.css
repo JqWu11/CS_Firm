@@ -24,8 +24,8 @@ ul {
 
 /* Header Styles */
 .header {
-    background-color: #a9a9a9;;
-    color: #1e1e1f;
+    background-color: #005ea2;;
+    color: #ffffeb;
     font-size: 26px;
     display: flex;
     flex-direction: column;
@@ -55,6 +55,7 @@ ul {
     padding: 5px 0; 
     width: 100%;
     justify-content: space-evenly;
+    color: #005ea2;
 }
 
 .header-links ul{
@@ -70,6 +71,7 @@ ul {
     text-decoration: none;
     font-size: 18px;
     border-radius: 12px;
+    /* white-space: nowrap; */
 }
 
 
@@ -127,9 +129,10 @@ h1 {
 
 .copy {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    color: #333333;
-    text-align: center; /* Center the text */
+    font-size: 24px;
+    font-weight: 500;
+    color: #0c0252;
+    text-align: justify; /* Center the text */
 }
 
 /* Footer Styles */
@@ -325,7 +328,7 @@ textarea.contact-inputs {
 
 .contact-right {
     padding: 30px;
-    background-color: #f8f9fa;
+    background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -337,7 +340,6 @@ textarea.contact-inputs {
 
 .contact-right p {
     font-size: 16px;
-    margin-bottom: 10px;
 }
 
 .contact-right p strong {
@@ -365,14 +367,38 @@ textarea.contact-inputs {
 .logo img{
     margin: 0px;
     margin-top: -10px;
+    filter: invert(1);
 }
 
 .header-smaller{
     font-size: 20px;
-    line-height: 20px;
+    line-height: 40px;
 }
 
 .header-left{
     font-size: 40px;
     line-height: 28px;
+}
+
+.contact-smaller{
+    line-height: 1.2;
+    margin: 0;
+}
+
+.contact-normal{
+    padding-top: 8px;
+    margin-bottom: 0;
+}
+
+iframe{
+    margin-top: 20px;
+}
+
+.container.mt-5{
+    margin-bottom: 20px;
+    margin-top: 300px;
+}
+
+.container.mt-5.row{
+    margin-top: 200px;
 }
