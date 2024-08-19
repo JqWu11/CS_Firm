@@ -402,3 +402,28 @@ iframe{
 .container.mt-5.row{
     margin-top: 200px;
 }
+
+.team-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.team-page{
+    display: flex;
+    margin: 0 100px;
+}
+
+.team-image{
+    height: 100%;
+    max-width: 20vw;
+    margin-right: 50px;
+}
+
+.team-page ul {
+    list-style: disc inside !important; /* Force discs to appear inside the ul */
+}
+
+.team-page li {
+    list-style: circle !important; /* Force circles for li elements */
+}
+
